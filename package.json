@@ -12,10 +12,16 @@
   "activationEvents": [],
   "main": "./extension.js",
   "contributes": {
-    "commands": [{
-      "command": "htmlclasses-parser.helloWorld",
-      "title": "Hello World"
-    }]
+    "commands": [
+      {
+        "command": "htmlclasses-parser.helloWorld",
+        "title": "Hello World"
+      },
+      {
+        "command": "htmlclasses-parser.test",
+        "title": "htmlclasses test"
+      }
+    ]
   },
   "scripts": {
     "lint": "eslint .",
@@ -26,6 +32,7 @@
     "@types/vscode": "^1.85.0",
     "@types/mocha": "^10.0.6",
     "@types/node": "18.x",
+    "prettier": "^3.1.1",
     "eslint": "^8.56.0",
     "typescript": "^5.3.3",
     "@vscode/test-cli": "^0.0.4",
