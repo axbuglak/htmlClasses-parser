@@ -1,5 +1,8 @@
 # htmlclasses-parser README
 
+
+- auto detection and pooling classes into .css / .scss files
+
 This is the README for your extension "htmlclasses-parser". After writing up a brief description, we recommend including the following sections.
 
 ## Features
