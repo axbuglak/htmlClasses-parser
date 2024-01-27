@@ -2,6 +2,7 @@
 
 
 - auto detection and pooling classes into .css / .scss files
+- id supporting
 
 This is the README for your extension "htmlclasses-parser". After writing up a brief description, we recommend including the following sections.
 
