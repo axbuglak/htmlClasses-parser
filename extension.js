@@ -13,8 +13,8 @@ function activate(context) {
     const window = vscode.window;
     const client = new Client(window);
 
-    const classes = client.convert();
-    client.print(classes.toString());
+    client.convert();
+    // client.print(classes.toString());
   });
   context.subscriptions.push(disposable, test);
 }
