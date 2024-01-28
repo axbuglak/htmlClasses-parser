@@ -14,18 +14,14 @@
   "contributes": {
     "commands": [
       {
-        "command": "htmlclasses-parser.helloWorld",
-        "title": "Hello World"
-      },
-      {
-        "command": "htmlclasses-parser.test",
-        "title": "htmlclasses test"
+        "command": "htmlclasses-parser.run",
+        "title": "Run htcl-parser"
       }
     ]
   },
   "scripts": {
-    "lint": "eslint .",
-    "pretest": "npm run lint",
+    "lint": "eslint . && prettier -c \"**/*.js\" \"**/*.json\" \"**/*.md\" \"**/*.yml\" \"**/*.ts\"",
+    "fmt": "prettier --write \"**/*.js\" \"**/*.json\" \"**/*.md\" \"**/*.yml\" \"**/*.ts\"",
     "test": "vscode-test"
   },
   "devDependencies": {
