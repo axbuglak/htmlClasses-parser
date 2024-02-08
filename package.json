@@ -15,9 +15,26 @@
     "commands": [
       {
         "command": "htmlclasses-parser.run",
-        "title": "Run htcl-parser"
+        "title": "Run html-parser"
       }
-    ]
+    ],
+    "keybindings": [
+      {
+        "command": "htmlclasses-parser.run",
+        "key": "alt+ctrl+c",
+        "mac": "alt+cmd+c",
+        "when": "editorTextFocus"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+            "command": "htmlclasses-parser.run",
+            "title": "run html-classes parser",
+            "group": "HTMLClasses-parser"
+        }
+      ]
+    }
   },
   "scripts": {
     "lint": "eslint . && prettier -c \"**/*.js\" \"**/*.json\" \"**/*.md\" \"**/*.yml\" \"**/*.ts\"",

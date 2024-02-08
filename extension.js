@@ -6,6 +6,9 @@ function activate(context) {
   const client = new Client(window);
 
   const run = vscode.commands.registerCommand('htmlclasses-parser.run', () => {
+    const fileType = window.activeTextEditor?.document.fileName;
+    if (!fileType.endsWith('html') && !fileType.endsWith('jsx') &&
+     !fileType.endsWith('tsx') && !fileType.endsWith('vue')) return;
     client.convert();
   });
   context.subscriptions.push(run);
