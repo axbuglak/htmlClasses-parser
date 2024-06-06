@@ -14,7 +14,7 @@ function activate(context) {
       !fileType.endsWith('vue')
     )
       return;
-    client.convert();
+    client.convertCSS();
   });
   context.subscriptions.push(run);
 }
